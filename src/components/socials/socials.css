@@ -1,0 +1,10 @@
+.socials__section{
+    padding: 0 7rem 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.socials__section-slack{
+    padding: 1.5rem;
+}

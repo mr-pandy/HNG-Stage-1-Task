@@ -1,0 +1,24 @@
+.profile__details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile__details-img{
+    margin: 4rem 0 1.5rem 0;
+}
+.profile__details-img #profile__img{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
+.profile__details-name h1{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--gray900);
+}
+.profile__details-name #slack{
+    display: none;
+}

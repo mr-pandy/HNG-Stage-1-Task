@@ -1,0 +1,20 @@
+.icon {
+  position: fixed;
+  top: 10%;
+  right: 15%;
+}
+.closed{
+    display: none;
+}
+
+@media screen and (max-width: 550px){
+    .closed{
+        position: fixed;
+        top: 10%;
+        right: 10%;
+        display: block;
+    }
+    .icon{
+        display: none;
+    }
+}
