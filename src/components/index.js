@@ -3,4 +3,5 @@ export { default as LinkSection } from './linksection/LinkSection';
 export { default as ProfileDetails } from './profiledetails/ProfileDetails';
 export { default as Socials } from './socials/Socials';
 export { default as ShareButton } from './sharebutton/ShareButton';
+export { default as ContactMe } from './contactme/ContactMe';
 

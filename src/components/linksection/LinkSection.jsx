@@ -1,6 +1,6 @@
 import React from 'react'
 import './linksection.css';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const LinkSection = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -9,7 +9,7 @@ const LinkSection = () => {
     <div className='link__section'>
       {
         links.map( (link) => (
-          <a key={link.id} href={link.url} id={link.id} target={"_blank"} >
+          <a key={link.id} href={link.url} id={link.id} target="_blank" rel="noreferrer" >
             <button className={`${!isDesktop ? "btn_sm" : "btn_lg"}`}>
               {link.name}
             </button>
@@ -53,4 +53,9 @@ const links = [
     name: "Design Books",
     url: "https://books.zuri.team/design-rules",
   },
+  {
+    id: "contact",
+    name: "Contact Us",
+    url: "/contact"
+  }
 ];
