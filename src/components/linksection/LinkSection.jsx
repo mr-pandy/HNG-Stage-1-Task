@@ -26,7 +26,7 @@ const links = [
   {
     id: "twitter",
     name: "Twitter Link",
-    url: "https://twitter.com/fran6is_",
+    url: "https://twitter.com/just_cruise_",
   },
   {
     id: "btn__zuri",
