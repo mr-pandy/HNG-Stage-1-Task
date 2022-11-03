@@ -1,64 +1,40 @@
 .link__section{
     padding: 3.5rem 9rem 1.5rem;
-}
-.link__section-twitter,
-.link__section-zuriteam,
-.link__section-zuribooks,
-.link__section-pythonbooks,
-.link__section-background,
-.link__section-designbooks{
-    background: var(--gray200);
-    height: 76px;
-    margin-bottom: 1.5rem;
-    border: 1px solid #EAECF0;
-    border-radius: 8px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
-.scale-up-center:hover {
-	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
- @-webkit-keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  @keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  
-
-.link__section button{
-    background-color: inherit;
-    border: none;
-    cursor: pointer;
-}
-.link__section button a{
+.link__section a{
     text-decoration: none;
     color: var(--gray900);
     font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 14px;
 }
 .link__section button a:hover{
     color: var(--gray900);
     font-weight: 700;
+}
+
+.btn_lg,
+.btn_sm {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  background: #eaecf0;
+  outline: none;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+.btn_lg:hover,
+.btn_sm:hover{
+    background: #d2d3d6;
+  }
+
+.btn_sm {
+  height: 68px;
+}
+.btn_lg {
+  height: 76px;
 }
 
 @media screen and (max-width: 550px){

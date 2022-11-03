@@ -1,55 +1,56 @@
 import React from 'react'
 import './linksection.css';
+import { useEffect, useState } from "react";
 
 const LinkSection = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+
   return (
     <div className='link__section'>
-
-      {/* Twitter  */}
-      <div className='link__section-twitter'>
-        <button id='twitter'>
-          <a href="https://twitter.com/just_cruise_">Twitter Link</a>
-        </button>
-      </div>
-
-      {/* Zuri Team */}
-      <div className='link__section-zuriteam'>
-        <button id='btn__zuri'>
-          <a href="https://training.zuri.team/">Zuri Team</a>
-        </button>
-      </div>
-
-      {/* Zuri Books  */}
-      <div className='link__section-zuribooks'>
-        <button id='books'>
-          <a href="http://books.zuri.team/">Zuri Books</a>
-        </button>
-      </div>
-
-      {/* Python Books  */}
-      <div className='link__section-pythonbooks'>
-        <button id='book__python'>
-          <a href="https://books.zuri.team/python-for-beginners?ref_id=femiyoghurt">Python Books</a>
-        </button>
-      </div>
-
-      {/* Background Check for Coders  */}
-      <div className='link__section-background'>
-        <button id='pitch'>
-          <a href="https://background.zuri.team/">Background Check for Coders</a>
-        </button>
-      </div>
-
-      {/* Design Books */}
-      <div className='link__section-designbooks'>
-        <button id='book__design'>
-          <a href="https://books.zuri.team/python-for-beginners?ref_id=femiyoghurt">Design Books</a>
-        </button>
-      </div>
-
-
+      {
+        links.map( (link) => (
+          <a key={link.id} href={link.url} id={link.id} target={"_blank"} >
+            <button className={`${!isDesktop ? "btn_sm" : "btn_lg"}`}>
+              {link.name}
+            </button>
+          </a>
+        ))
+      }
     </div>
   )
 }
 
-export default LinkSection
+export default LinkSection;
+
+const links = [
+  {
+    id: "twitter",
+    name: "Twitter Link",
+    url: "https://twitter.com/fran6is_",
+  },
+  {
+    id: "btn__zuri",
+    name: "Zuri Team",
+    url: "https://training.zuri.team/",
+  },
+  {
+    id: "books",
+    name: "Zuri Books",
+    url: "https://books.zuri.team/",
+  },
+  {
+    id: "book__python",
+    name: "Python Books",
+    url: "https://books.zuri.team/python-for-beginners?ref_id=utin-francis-peter",
+  },
+  {
+    id: "pitch",
+    name: "Background Check for Coders",
+    url: "https://background.zuri.team/",
+  },
+  {
+    id: "book__design",
+    name: "Design Books",
+    url: "https://books.zuri.team/design-rules",
+  },
+];
