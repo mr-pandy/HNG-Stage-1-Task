@@ -1,6 +1,7 @@
 import React from 'react'
 import './linksection.css';
 import { useState } from "react";
+import { Link } from 'react-router-dom'
 
 const LinkSection = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -9,11 +10,11 @@ const LinkSection = () => {
     <div className='link__section'>
       {
         links.map( (link) => (
-          <a key={link.id} href={link.url} id={link.id} target="_blank" rel="noreferrer" >
+          <Link key={link.id} to={link.url} id={link.id}>
             <button className={`${!isDesktop ? "btn_sm" : "btn_lg"}`}>
               {link.name}
             </button>
-          </a>
+          </Link>
         ))
       }
     </div>
