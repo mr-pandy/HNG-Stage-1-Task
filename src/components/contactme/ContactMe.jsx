@@ -13,25 +13,25 @@ const ContactMe = () => {
             <form action="/" className="contact__info-form">
                 <div className="contact__info-form-row">
                     <div className="contact__info-form-firstName">
-                        <label for="first_name">First Name </label>
+                        <label hmtlFor="first_name">First Name </label>
                         <input id="first_name" type="text" placeholder='Enter your first name' required/>
                     </div>
                     <div className="contact__info-form-lastName">
-                        <label for="last_name">Last Name </label> 
+                        <label hmtlFor="last_name">Last Name </label> 
                         <input type="text" placeholder='Enter your last name' required/>
                     </div>
                 </div>
                 <div className="contact__info-form-email">
-                    <label for="email">Email </label>
+                    <label hmtlFor="email">Email </label>
                     <input id="email" type="email" placeholder='yourname@email.com' required/>
                 </div>
                 <div className="contact__info-form-message">
-                    <label for="message">Message </label>
+                    <label hmtlFor="message">Message </label>
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Send me a message and I'll reply you as soon as possible..." required></textarea>
                 </div>
                 <div className="contact__info-form-checkbox">
                     <input type="checkbox" name="checkbox" id="checkbox" required/>
-                    <label for="checkbox">You agree to providing your data to femiyoghurt who may contact you. </label>
+                    <label hmtlFor="checkbox">You agree to providing your data to Ekereke Precious Imeh who may contact you. </label>
                 </div>
                 <div className="contact__info-form-button" >
                     <button id='btn__submit'>Send message</button>

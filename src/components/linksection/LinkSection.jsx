@@ -9,7 +9,8 @@ const LinkSection = () => {
     <div className='link__section'>
       {
         links.map( (link) => (
-          <a key={link.id} href={link.url} id={link.id} target="_blank" rel="noreferrer" >
+          <a key={link.id} href={link.url} id={link.id} target={link.id === "contact" ? "" : "_blank"}
+          rel="noopener noreferrer" >
             <button className={`${!isDesktop ? "btn_sm" : "btn_lg"}`}>
               {link.name}
             </button>
@@ -55,7 +56,7 @@ const links = [
   },
   {
     id: "contact",
-    name: "Contact Us",
+    name: "Contact Me",
     url: "/contact"
   }
 ];
