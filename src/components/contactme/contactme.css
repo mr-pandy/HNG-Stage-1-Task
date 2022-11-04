@@ -111,14 +111,13 @@ line-height: 24px;
     color: #fff;
     background: var(--primary600);
     padding: 0.65rem;
-    border: 1px solid #1570EF;
+    border: 1px solid transparent;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
 }
 #btn__submit:hover{
     padding: 12px 20px;
     background: #175CD3;
-    border: 1px solid #175CD3;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 }
 #btn__submit:focus{
@@ -126,6 +125,14 @@ line-height: 24px;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
 }
 
+#btn__submit:disabled {
+    background-color: #D0D5DD;
+    cursor: not-allowed;
+}
+
+.contact__info-form p{
+    color: #F89687;
+}
 @media screen and (max-width: 768px){
     .contact__info{
         display:flex;
